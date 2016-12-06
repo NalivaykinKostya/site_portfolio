@@ -1,7 +1,39 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+	- var title = 'My work'
 
 block content
-  include ../common/_greating
+	include ../common/header
+	.box
+		svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" preserveAspectRatio="none" class="traingle")
+			polygon(points="0,0   0,386   500.8,386   500.8,75.5")
+			polygon(points="1000,0   1000,386   500,386   500,75.5")
+	.box-wrapper
+		h1.main_article Мои работы
+		//- *******My-work**********
+	main.clearfix.my-work
+		.main-left
+			.loftschool
+				h3.article Сайт школы онлайн образования
+				.line-segment
+				p.main-left__text  html, css,javascript
+				button.button
+					a(class="button__link" href="http://loftblog.ru/") +svg('link', 'icons') Посмотреть сайт
+		.main-right
+			.slider-big
+		//- *******Say-about-me**********
+	.sayaboutme
+		img(class="mayak" src="assets/img/mayak.png" alt="Изображение маяка")
+		.content
+			.content-star
+				.main_article Что обо мне говорят
+			.form-wrapper
+				form( action="")
+					h3.article.article__form Связаться со мной
+					.line-segment
+					input(type="text" placeholder="Ваше имя" name="name")
+					input(type="email" placeholder="Ваш email" name="email")
+					textarea(name="message" id="" cols="38" rows="6" placeholder="Ваше обращение")
+					button(class="form__button" type="submit") Отправить
+					button(class="form__button" type="reset") Очистить

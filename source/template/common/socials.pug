@@ -1,0 +1,18 @@
+- 
+	var list = [
+		{
+			soc: "vk",
+			path: "https://vk.com/id118822292"
+		}, {
+			soc: "github",
+			path: "https://github.com/NalivaykinKostya/site_portfolio"
+		}, {
+			soc: "in",
+			path: "http://knalivaykin.gq/"
+		}
+	];
+ul.socials__list
+	each social in list
+		li.socials__item
+			a(class=`socials__link.socials__link_${social.soc}` href=social.path, target='_blank')
+				img.socials__link_pic(src=`assets/img/${social.soc}.png`, alt='socials')

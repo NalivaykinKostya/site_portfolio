@@ -1,0 +1,12 @@
+.socials__list{
+	margin: 0;
+	padding: 0;		
+}
+.socials__item{
+	display: inline-block;
+	margin-left: 20px;
+	list-style: none;
+	&:first-child{
+		margin-left: 0;
+	}
+}
