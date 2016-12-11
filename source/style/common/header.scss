@@ -14,15 +14,14 @@
 	background: transparent;
 	line-height: 42px;
 	text-align: right;
-	padding-top: 27px; 
+    padding: 27px;
+    box-sizing: border-box;
 }
 .socials__list {
-	padding-left: 27px;
 	margin: 0;
 	float: left;
 }
 .menu{
-	margin-right: 29px;
 	width: 42px;
     height: 42px;
     fill: white;

@@ -3,7 +3,7 @@
     height: 360px;
     margin: 50px auto;
     position: absolute;
-    bottom: 73px;
+    bottom: 0;
     right: 0;
     overflow: hidden;
 }
@@ -17,7 +17,7 @@
   height: 170px;
   margin: 0 auto;
   position: absolute;
-  bottom: 160px; 
+  bottom: 60px; 
   right: 0;   
 }
 .main_article{
@@ -26,7 +26,7 @@
   font-family: "Sansus Webissimo",Sans-serif;
   color: white;
   text-transform: uppercase;
-  line-height: 0.889;
+  line-height: 1;
   text-align: center;
 }
 /*******************My-work main********************/
@@ -105,7 +105,7 @@
 /********Say-about-me***********/
 .sayaboutme{
   width: 100%;
-  height: 1170px;
+  height: 1310px;
   background: url(../img/about.png);
   background-size: cover; 
   position: relative;
@@ -117,16 +117,83 @@
   text-align: center;
   padding-top: 15px;
 }
-
-.form-wrapper form{
+.about-me{
+  width: 380px;
+  height: 210px;
+  margin: 0 auto;
+  text-align: center;
+  background: transparent url(../img/stars3.png) no-repeat 50% 1%; 
+  padding-top: 5px; 
+}
+.reviewsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.reviewsList__item {
+  float: left;
+  vertical-align: top;
+  margin-right: 37px;
+  width: 363px;
+  margin-bottom: 35px;
+  text-align: left;
+}
+.reviewsList__text {
+  color: #fff;
+  font-family: "robotoregular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin: 0;
+  margin-top: 15px;
+}
+.reviewsList__send {
+  text-align: center;
+  vertical-align: middle;
+}
+.reviewsList__image {
+  max-width: 71px;
+  max-height: 71px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+.reviewsList__user {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 19px;
+  max-width: 265px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+}
+.reviewsList__user__name {
+  font-family: "robotobold";
+  display: block;
+  font-style: normal;
+}
+.reviewsList__user__work {
+  display: block;
+  font-style: normal;
+  font-family: "robotoregular";
+}
+.form-wrappe__form{
+  position: relative;
   background-color: rgba(245,246,247,0.05);
   padding-top: 10px;
+  z-index: 100;
 }
 .form-wrapper input, .form-wrapper textarea{
   background-color: rgba(245,246,247,0.1);
   border: none;
-    font: 500 16px "Roboto", Sans-serif;  
-    color: rgba(245,246,247, 1);    
+  font: 500 16px "Roboto", Sans-serif;  
+  color: rgba(245,246,247, 1);    
 }
 .form-wrapper input{
   width: 340px;
@@ -135,8 +202,8 @@
   padding-left: 10px;
 }
 .form-wrapper input::placeholder, .form-wrapper textarea::placeholder{
-   font-family: "Roboto", Sans-serif;
-   font-weight: 400;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
 }
 .form-wrapper textarea{
   margin: 10px auto;
@@ -171,6 +238,6 @@
 }
 .mayak{
   position: absolute;
-  bottom: -145px;
+  bottom: 0;
   right: 70px;
 }

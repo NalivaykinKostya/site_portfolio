@@ -26,10 +26,29 @@ block content
 	.sayaboutme
 		img(class="mayak" src="assets/img/mayak.png" alt="Изображение маяка")
 		.content
-			.content-star
-				.main_article Что обо мне говорят
+			.about-me
+				h1.main_article Что обо мне говорят
+			ul.reviewsList.clearfix
+				li.reviewsList__item
+					.reviewsList__send
+						.reviewsList__image
+							img(src="assets/img/kovalchuk.png" width="71" alt="Ковальчук Дмитрий. Основатель Loftschool.com")
+					blockquote.reviewsList__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+					.reviewsList__send
+						.reviewsList__user
+							cite.reviewsList__user__name="Ковальчук Дмитрий"
+							cite.reviewsList__user__work="Основатель Loftschool"	
+				li.reviewsList__item
+					.reviewsList__send
+						.reviewsList__image
+							img(src="assets/img/zakharov.png" width="71" alt="Ковальчук Дмитрий. Основатель Loftschool.com")
+					blockquote.reviewsList__text Этот код выдержет любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
+					.reviewsList__send
+						.reviewsList__user
+							cite.reviewsList__user__name="Зар Захаров"
+							cite.reviewsList__user__work="главный преподаватель"	
 			.form-wrapper
-				form( action="")
+				form.form-wrappe__form( action="")
 					h3.article.article__form Связаться со мной
 					.line-segment
 					input(type="text" placeholder="Ваше имя" name="name")
@@ -37,3 +56,6 @@ block content
 					textarea(name="message" id="" cols="38" rows="6" placeholder="Ваше обращение")
 					button(class="form__button" type="submit") Отправить
 					button(class="form__button" type="reset") Очистить
+	footer
+		include ../common/footer
+
