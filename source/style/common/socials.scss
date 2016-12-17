@@ -1,0 +1,22 @@
+.socials__list{
+	margin: 0;
+	padding: 0;		
+}
+.socials__item{
+	display: inline-block;
+	margin-left: 20px;
+	list-style: none;
+	&:first-child{
+		margin-left: 0;
+	}
+}
+.socials__link_pic{
+	height: 22px;
+	width: 30px;
+	fill: white;
+	opacity: .7;
+	&:hover{
+		fill: #0249c5;
+		opacity:1;
+	}
+}
