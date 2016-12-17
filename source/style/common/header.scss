@@ -1,3 +1,4 @@
+/***************header****************/
 .header{
 	margin:auto;
 	width: 100%;
@@ -5,7 +6,6 @@
 	height: 785px;
 	background: url(../img/photo-header.png) no-repeat;
 	background-size: cover;
-	padding: 1px;	
 }
 .nav{
 	position: relative;;
@@ -26,4 +26,16 @@
     height: 42px;
     fill: white;
     float: right;
+}
+.box {
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.traingle {
+  fill: #000;
+  opacity: .5;
 }

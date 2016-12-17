@@ -10,3 +10,13 @@
 		margin-left: 0;
 	}
 }
+.socials__link_pic{
+	height: 22px;
+	width: 30px;
+	fill: white;
+	opacity: .7;
+	&:hover{
+		fill: #0249c5;
+		opacity:1;
+	}
+}
