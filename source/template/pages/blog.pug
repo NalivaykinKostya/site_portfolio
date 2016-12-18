@@ -1,0 +1,31 @@
+extends ../_template
+
+block variables
+	- var title = 'My blog'
+
+block content
+	include ../common/header
+		<!-- **************************************** -->
+	.blog
+		.works__svg.blog__svg
+			svg(version='1.1', width='100%', height='170px', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', xml:space='preserve', viewbox='0 0 50 50', preserveaspectratio='none').triangle__left
+				polygon(fill='#faf8f0', points='0,0 0,130 100,100')
+			svg(version='1.1', width='100%', height='170px', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', xml:space='preserve', viewbox='0 0 50 50', preserveaspectratio='none').triangle__right
+				polygon(fill='#faf8f0', points='100,100 0,50 50,0')
+		.blog__left
+			ul.blog__left__list
+				- for (var x=1; x<5; x++)
+					li.blog__left__item
+						a.blog__left__link(href=`#chapter_${x}`)
+							| Lorem ipsum #{x}dolor sit amet, consectetur adipisicing elit. Cum, ullam.
+		.blog__right
+			article.blog__right__article
+				h3(class="article blog__right__title" id="chapter_1")
+					|Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, ullam.
+				data 22 ноября 2016г.
+				p.main-left__text.blog__right__text
+					|Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio facere dolorem necessitatibus porro, rem esse repudiandae reiciendis soluta qui Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut omnis aspernatur libero dignissimos earum dolorem quod quisquam sit! Aut, qui! Obcaecati magni voluptatibus praesentium nihil nemo, assumenda unde vitae quam similique illo quis fugit id asperiores, hic commodi consequuntur, blanditiis sint aperiam, voluptatem nobis dolorum sapiente a debitis nisi. Pariatur laborum eligendi repellat quod provident sint voluptas, ea magni molestias distinctio, nisi, perferendis accusamus unde labore dignissimos architecto, quasi blanditiis doloribus iusto beatae doloremque quam. Minima modi amet quis quidem error vel voluptate adipisci quos fugit nisi impedit autem ullam, mollitia ratione voluptatum accusantium rerum inventore beatae debitis expedita laborum maxime, deserunt ipsum eum. Distinctio, nisi. Ad reprehenderit iure voluptates impedit vitae ipsam quidem nulla saepe deserunt ab beatae eligendi sit vero numquam atque iste fugit quod libero adipisci sed neque veritatis magnam, modi dicta! Possimus eligendi ea explicabo ab inventore architecto voluptate, odit ullam fugit quod in rerum. Reprehenderit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi doloribus veritatis vel dolorum eum natus nulla nisi ea amet aut beatae, quisquam debitis animi sed quo consectetur placeat voluptates tempora laborum consequuntur? Mollitia dolores nemo vero enim incidunt, totam ab minima veritatis vel, accusamus ratione a deserunt quaerat officiis eligendi! Velit nobis id at, labore, fuga error temporibus dolorem est adipisci itaque illo officiis ab magni explicabo repudiandae! Magnam aperiam expedita, quos asperiores architecto similique distinctio tempore molestias assumenda alias quisquam ducimus deserunt excepturi explicabo nisi voluptatibus odio optio placeat odit temporibus! Eaque veritatis dolorum neque eum vitae, aliquid voluptas repellendus. Quae ipsam hic perspiciatis dolore facilis sequi possimus dolorem excepturi pariatur veniam! Natus dignissimos obcaecati facere maiores ipsa? Velit corrupti quos, doloremque quasi ipsam fugit neque iusto natus totam recusandae assumenda illum libero autem repellendus ducimus ea in sunt rem eveniet laboriosam debitis, veritatis doloribus. Fugiat animi error officiis!
+			.line-blog
+		<!-- **************************************** -->
+	footer
+		include ../common/footer	

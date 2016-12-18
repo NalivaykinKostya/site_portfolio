@@ -1,5 +1,10 @@
 div.avatar
-    div.avatar__photo
-        img(src='assets/img/avatar3.jpg')
-    h2.avatar__article Константин Наливайкин
-    p.avatar__text Личный сайт веб разработчика
+	div.avatar__photo
+		img(src='assets/img/avatar3.jpg')
+	case title
+		when 'My work'  	
+			h2.avatar__article Константин Наливайкин
+			p.avatar__text Личный сайт веб разработчика
+		when 'My blog'
+			h2.avatar__article Блог
+			p.avatar__text Статьи, которые я написал		
