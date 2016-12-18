@@ -1,0 +1,352 @@
+.works__svg {
+    width: 100%;
+    position: absolute;
+    top: -285px;
+}
+.triangle__left {
+    width: 50%;
+    float: left;
+}
+.triangle__right {
+    width: 50%;
+    float: right;
+}
+.box-wrapper{
+  background: transparent url(../img/stars2.png) no-repeat 50% 50%;  
+  width: 100%;
+  height: 170px;
+  margin: 0 auto;
+  position: absolute;
+  top: -175px;
+  z-index: 100; 
+}
+.main_article{
+  font-weight: 500;
+  font-size: 62.792px;
+  font-family: "Sansus Webissimo",Sans-serif;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+/*******************My-work main********************/
+.my-work{
+  width: 100%;
+  height: 750px; 
+  position: relative;; 
+}
+.main-left, .main-right{
+  display: block;
+  width: 50%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+.main-left{
+  background-color: #f2f0e8;
+  position: relative;
+  text-align: center;
+  padding-top: 200px;
+}
+.main-right{
+  background-color: #e3e2de;
+  min-height: 650px;
+  padding-top: 66px;
+}
+.loftschool{
+  width: 330px;
+  height: 260px;
+  margin: 40px auto;
+}
+.article{
+  font-size: 35px;
+  font-family: "Sansus Webissimo", Sans-serif;
+  color: rgb(71, 75, 87);
+  text-transform: uppercase;
+  line-height: 1.171;
+  text-align: center;
+}
+
+.line-segment {
+  background-color: rgb(71, 75, 87);
+  opacity: 0.502;
+  margin: 0 auto;
+  width: 89px;
+  height: 3px;
+  z-index: 88;
+}
+.main-left__text{
+  font-size: 15.791px;
+  font-family: "Roboto", Sans-serif;
+  color: rgb(8, 60, 150);
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+}
+.button__link{
+  font-size: 16px;
+  font-family: "Roboto", Sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: text-bottom;  
+}
+.icons{
+  padding: 10px;
+}
+.button {
+  background-color: rgb(0, 76, 209);
+  border: none;
+  margin-top: 35px;
+  padding: 0;
+}
+.slider-big{
+  margin-bottom: 43px;
+}
+.slider__display-big{
+    overflow: hidden; 
+    height: 416px; 
+    max-height: 416px; 
+    max-width: 90%;    
+    position: relative;
+    margin: 0 auto;
+    text-align: center;                
+}
+.worksList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    float: left;
+}
+.slider_opposite {
+    float: right;
+}
+.slider, .slider_opposite{
+    width: 50%;
+}
+.slider_display{
+    width: 100%;
+    height: 226px;
+    overflow: hidden;
+    position: relative;      
+}
+.worksList__control {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.worksList__control__link {
+    display: block;
+    cursor: default;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #c3bdae;
+    background: rgba(195, 189, 174, 0.7);
+    z-index: 999;
+      &:hover{
+      background: #8d8367;
+      background: rgba(141, 131, 103, 0.5);
+      }
+      &:hover .arrow{
+        opacity: 1;
+      }
+}
+.arrow {
+    width: 26px;
+    height: 16px;
+    opacity: 0.7;
+    top: 50%;
+    cursor: pointer;
+    position: relative;
+    left: 48%;
+}
+.slider_opposite .slider__item {
+  top: 100%; 
+}
+.slider__item {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: -100%; 
+}
+  .slider__item.active {
+    top: 0%; 
+}
+  .slider__item img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; 
+}
+.worksList__control__image {
+    width: 340px;
+    margin: auto;
+    display: block;
+}
+/********Say-about-me***********/
+.sayaboutme{
+  width: 100%;
+  min-height: 100%;
+  background: url(../img/about.png);
+  background-size: cover; 
+  position: relative;
+  margin-bottom: -40px;  
+  &:after{
+    content: '';
+    display: block;
+    height: 190px; 
+  }
+}
+.content{
+  width: 820px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+}
+.about-me{
+  width: 380px;
+  min-height: 210px;
+  margin: 0 auto;
+  text-align: center;
+  background: transparent url(../img/stars3.png) no-repeat 50% 1%; 
+  padding-top: 5px; 
+}
+.reviewsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.reviewsList__item {
+  float: left;
+  vertical-align: top;
+  margin-right: 37px;
+  width: 363px;
+  margin-bottom: 35px;
+  text-align: left;
+}
+.reviewsList__text {
+  color: #fff;
+  font-family: "robotoregular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin: 0;
+  margin-top: 15px;
+}
+.reviewsList__send {
+  text-align: center;
+  vertical-align: middle;
+}
+.reviewsList__image {
+  max-width: 71px;
+  max-height: 71px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+.reviewsList__user {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 19px;
+  max-width: 265px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+}
+.reviewsList__user__name {
+  font-family: "robotobold";
+  display: block;
+  font-style: normal;
+}
+.reviewsList__user__work {
+  display: block;
+  font-style: normal;
+  font-family: "robotoregular";
+}
+.form-wrapper__form{
+  position: relative;
+  background-color: rgba(245,246,247,0.05);
+  padding-top: 10px;
+  z-index: 100;
+}
+.form-wrapper input, .form-wrapper textarea{
+  background-color: rgba(245,246,247,0.1);
+  border: none;
+  font: 500 16px "Roboto", Sans-serif;  
+  color: rgba(245,246,247, 1);    
+}
+.form-wrapper input{
+  width: 340px;
+  height: 45px;
+  margin: 10px;
+  padding-left: 10px;
+}
+.form-wrapper input::placeholder, .form-wrapper textarea::placeholder{
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+}
+.form-wrapper textarea{
+  margin: 10px auto;
+  padding: 10px;
+}
+.form__button{
+  width: 50%;
+  float:left;
+  height: 45px;
+  background-color: rgba(245,246,247,0.1);
+  border:none;
+  font: 500 16px "Roboto", Sans-serif;  
+  color: rgba(245,246,247,0.6);
+  
+    &:hover{
+    background-color: #004cd1;
+    color: rgba(245,246,247,0.9);   
+    }
+}
+.form-wrapper{
+  width: 380px;
+  min-height: 370px;
+  margin: 0 auto;
+  margin-bottom: 156px;
+}
+.article__form{
+  color:white;
+}
+
+.form-wrapper .line-segment {
+  background-color: rgb(136, 137, 132);
+  margin-bottom: 20px;
+}
+.mayak{
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+}
